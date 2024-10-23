@@ -18,7 +18,7 @@ SAYZEK2024_neandertal/
 │   ├── utils/                  # Yardımcı işlevleri içeren dosyalar.
 │   │   ├── annotations/         # Annotations klasörü.
 │   │   │   ├── train.json       # Eğitim için kullanılan annotation dosyası.
-│   │   ├── images/             # Görüntü dosyaları. İndirlimesi Gerekiyor
+│   │   ├── images/             # Görüntü dosyaları. İndirilmesi Gerekiyor.
 │   │   ├── data_loader.py      # Verilerin yüklenmesini sağlar.
 │   │   ├── eval.py             # Modelin performansını değerlendirir.
 │   │   ├── image_name_to_id.py # Görüntü isimlerini ID'ye çevirir.
@@ -27,11 +27,13 @@ SAYZEK2024_neandertal/
 │       ├── data.yaml           # Veri ayarları dosyası.
 │
 ├── notebooks/
-│   └── model_development.ipynb  # Model geliştirme not defteri.
+│   ├── model_development.ipynb  # Model geliştirme not defteri.
+│   └── result.csv               # Model sonuçlarının saklandığı CSV dosyası.
 │
 ├── requirements.txt             # Gerekli kütüphanelerin listesi.
 │
 └── README.md                    # Proje hakkında bilgi veren dosya.
+
 ```
 
 ## Kurulum Adımları
