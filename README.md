@@ -75,19 +75,18 @@ Projenin ana dosyaları belirli bir sırayla çalıştırılmalıdır. Her bir d
    ```bash
    python src/train.py
    ```
-
-4. **Görüntü Tanıma**: `inference.py` dosyası, eğitilen model ile tahminler yapar. Bu adımda, modelin tahmin ettiği nesneler üzerinde çıkarım yapılır.
-
-   ```bash
-   python src/inference.py
-   ```
-
-5. **Görüntü İsimlerini ID'lere Dönüştürme**: `image_name_to_id.py` dosyası, `train.json` dosyasından gelen ID'leri işleyerek JSON formatında kaydeder. Bu adım, modelin değerlendirilmesi için gerekli olan ID eşleşmelerini sağlar.
+4. **Görüntü İsimlerini ID'lere Dönüştürme**: `image_name_to_id.py` dosyası, `train.json` dosyasından gelen ID'leri işleyerek JSON formatında kaydeder. Bu adım, modelin değerlendirilmesi için gerekli olan ID eşleşmelerini sağlar.
 
    ```bash
    python src/image_name_to_id.py
    ```
 
+5. **Görüntü Tanıma**: `inference.py` dosyası, eğitilen model ile tahminler yapar. Bu adımda, modelin tahmin ettiği nesneler üzerinde çıkarım yapılır.
+
+   ```bash
+   python src/inference.py
+   ```
+   
 6. **Sonuç Değerlendirmesi**: `eval.py` dosyası, modelin performansını değerlendirir ve başarı oranlarını hesaplar. Bu adımda, daha önce çalıştırılan `image_name_to_id.py` dosyasından elde edilen ID'ler kullanılır.
 
    ```bash
