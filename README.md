@@ -15,11 +15,10 @@ SAYZEK2024_neandertal/
 │   ├── train_valid.py          # Eğitim ve validasyon süreçlerini yöneten dosya.
 │   ├── models/                 # Eğitilen model dosyaları.
 │   │   ├── best.pt             # En iyi model ağırlıkları.
-│   │   ├── yolo11l.pt          # YOLO11 model dosyası.
 │   ├── utils/                  # Yardımcı işlevleri içeren dosyalar.
 │   │   ├── annotations/         # Annotations klasörü.
 │   │   │   ├── train.json       # Eğitim için kullanılan annotation dosyası.
-│   │   ├── images/             # Görüntü dosyaları.
+│   │   ├── images/             # Görüntü dosyaları. İndirlimesi Gerekiyor
 │   │   ├── data_loader.py      # Verilerin yüklenmesini sağlar.
 │   │   ├── eval.py             # Modelin performansını değerlendirir.
 │   │   ├── image_name_to_id.py # Görüntü isimlerini ID'ye çevirir.
