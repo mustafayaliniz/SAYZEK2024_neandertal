@@ -1,0 +1,22 @@
+# Gerekli Kütüphaneler
+torch==2.3.1+cu118
+torchvision==0.18.1+cu118
+torchaudio==2.3.1+cu118
+numpy==1.26.4
+opencv-python==4.10.0
+pycocotools==2.0.8
+
+# Python Versiyonu
+python==3.12
+
+# CUDA Versiyonu
+# CUDA 11.8 ile uyumlu kütüphaneler kullanılmaktadır.
+
+# Model Çalıştırılması için Gerekli Minimum Donanım Gereksinimleri
+# - CPU: En az 4 çekirdekli bir işlemci
+# - RAM: 16 GB RAM
+# - GPU: CUDA uyumlu bir GPU
+# - Disk Alanı: Proje dosyaları ve veri setleri için en az 10 GB boş alan
+
+# Varsa Özel GPU Gereksinimleri
+# - CUDA 11.8 ile uyumlu en güncel NVIDIA sürücüleri
