@@ -1,0 +1,6 @@
+train: C:\\Users\\uzayk\\Desktop\\SAYZEK2024_neandertal\\src\\config\\train\\images
+val: C:\\Users\\uzayk\\Desktop\\SAYZEK2024_neandertal\\src\\config\\valid\\images
+
+nc: 4
+names: ['bina','yol_kesisim','futbol_sahasi','silo']
+
