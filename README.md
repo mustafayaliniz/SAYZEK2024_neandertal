@@ -61,7 +61,7 @@ Projenin ana dosyaları belirli bir sırayla çalıştırılmalıdır. Her bir d
 1. **Veri Yükleme**: `data_loader.py` dosyası, gerekli veri setini yükler ve uygun formatta işlenmesini sağlar. Bu dosya, JSON dosyasını YOLO formatına dönüştürerek her bir resim için bir TXT dosyası oluşturur. Her TXT dosyası, o resme karşılık gelen etiket ve koordinat bilgilerini içerir. Veri setini yüklemek için bu dosyayı çalıştırın:
 
    ```bash
-   python src/data_loader.py
+   python src/utils/data_loader.py
    ```
    
 2. **Eğitim ve Validasyon**: `train_valid.py` dosyası, modelin eğitim ve validasyon süreçlerini yönetir. Bu dosya, görüntüleri ve etiketleri %80 eğitim ve %20 validasyon oranında ayırır. Eğitim seti, modelin öğrenmesi için kullanılırken, validasyon seti modelin performansını değerlendirmek için kullanılır. Modelin eğitim sürecini başlatmak için bu dosyayı çalıştırın:
@@ -78,7 +78,7 @@ Projenin ana dosyaları belirli bir sırayla çalıştırılmalıdır. Her bir d
 4. **Görüntü İsimlerini ID'lere Dönüştürme**: `image_name_to_id.py` dosyası, `train.json` dosyasından gelen ID'leri işleyerek JSON formatında kaydeder. Bu adım, modelin değerlendirilmesi için gerekli olan ID eşleşmelerini sağlar.
 
    ```bash
-   python src/image_name_to_id.py
+   python src/utils/image_name_to_id.py
    ```
 
 5. **Görüntü Tanıma**: `inference.py` dosyası, eğitilen model ile tahminler yapar. Bu adımda, modelin tahmin ettiği nesneler üzerinde çıkarım yapılır.
@@ -87,10 +87,10 @@ Projenin ana dosyaları belirli bir sırayla çalıştırılmalıdır. Her bir d
    python src/inference.py
    ```
    
-6. **Sonuç Değerlendirmesi**: `eval.py` dosyası, modelin performansını değerlendirir ve başarı oranlarını hesaplar. Bu adımda, daha önce çalıştırılan `image_name_to_id.py` dosyasından elde edilen ID'ler kullanılır.
+6. **Sonuç Değerlendirmesi**: `eval.py` dosyası, modelin performansını değerlendirir ve başarı oranlarını hesaplar.
 
    ```bash
-   python src/eval.py
+   python src/utils/eval.py
    ```
 
 7. **Sonuç Görselleştirme**: `detection.py` dosyası, algılanan nesneleri görselleştirir ve sonuçları kullanıcıya sunar.
