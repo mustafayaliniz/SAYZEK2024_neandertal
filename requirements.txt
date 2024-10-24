@@ -3,11 +3,12 @@ torch==2.3.1+cu118
 torchvision==0.18.1+cu118
 torchaudio==2.3.1+cu118
 numpy==1.26.4
-opencv-python==4.10.0
+opencv-python==4.10.0.84
 pycocotools==2.0.8
+ultralytics
 
 # Python Versiyonu
-python==3.12
+#python==3.12
 
 # CUDA Versiyonu
 # CUDA 11.8 ile uyumlu kütüphaneler kullanılmaktadır.
